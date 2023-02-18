@@ -6,7 +6,7 @@ The file "funcions_wave.py" has 3 functions: (file_name is the name of the wav f
 
 # show_graf(file_name)
 
-When given a file name (.wav) it will show a graf with matplotlib of the value of every sample.
+When given a file name (.wav) it will show a graf with matplotlib of the value of every sample in the wav file.
 
 # get_duration_vector(file_name, threshold)
 
@@ -31,7 +31,7 @@ Using get_duration("test.wav", 1500) i get the following list -> [871, 520, 1932
 ![image](https://user-images.githubusercontent.com/70759474/209838594-0e5b2115-ab34-4ce3-85ce-bad01e3f88af.png)
 
 
-The first value is how long the first "0" state lasts for, the next is how long the following "1" state last, then the next "0" state, and so on. The duration of last state (either 0 or 1) is not saved. Each value is the number of microseconds that that state lasts for.
+The first value is how long the first "0" state lasts for, the next is how long the following "1" state last, then the next "0" state, and so on. The duration of the very last state is not saved. Each value is the number of microseconds that that state lasts for.
 
 
 # get_values(file_name)
