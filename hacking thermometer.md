@@ -1,3 +1,7 @@
+# Goal
+
+I have a wireless thermometer that I will try to hack since the wireless temperature sensor uses the same frequency as an antenna I can use with an arduino.
+
 # The thermometer
 
 This thermometer communicates with a wireless sensor that emits information in the radio frequency of 433Mhz, a very common frequency since it is unregulated in the EU.
