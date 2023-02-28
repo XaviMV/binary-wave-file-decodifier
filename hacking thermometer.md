@@ -26,7 +26,7 @@ This is a portion of the message, as we can see, there are some short 'high' or 
 
 # Decoding
 
-I made a guess that a if a 520 microseconds '1' pulse was followed by a 1930 '0' pulse it would represent a binary 0, and if the 520 microseconds '1' pulse was followed by a 3850 microseconds '0' pulse, then it would represent a binary 1. Using this criteria I translated the message to binary and it looked like this:
+I made a guess that a if a 520 microseconds '1' pulse was followed by a 1930 microseconds '0' pulse it would represent a binary 0, and if the 520 microseconds '1' pulse was followed by a 3850 microseconds '0' pulse, then it would represent a binary 1. Using this criteria I translated the message to binary and it looked like this:
 
 1001011011010000000011010101001011111
 
