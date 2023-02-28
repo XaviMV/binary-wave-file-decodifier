@@ -26,7 +26,7 @@ This is a portion of the message, as we can see, there are some short 'high' or 
 
 # Decoding
 
-I made a guess that a 520 microseconds '1' pulse followed by a 1930 '0' pulse would represent a binary 0, and if it was followed by a 3850 microseconds '0' pulse, then it would represent a binary 1. Using this criteria I translated the message to binary and it looked like this:
+I made a guess that a if a 520 microseconds '1' pulse was followed by a 1930 '0' pulse it would represent a binary 0, and if the 520 microseconds '1' pulse was followed by a 3850 microseconds '0' pulse, then it would represent a binary 1. Using this criteria I translated the message to binary and it looked like this:
 
 1001011011010000000011010101001011111
 
@@ -38,7 +38,7 @@ I did some tests transmitting different messages that I had recorded with differ
 
 ![image](https://user-images.githubusercontent.com/70759474/221695481-4c68f645-3215-47c9-a31d-8f4332fa3e92.png)
 
-The first 12 bits I think are just there so that the thermometer doesn't confuse random noise with a transmission from the sensor, so the thermometer will only listen to transmissions that gets the first 12 bits right. I think some of those bits also tell the channel number (the thermometer can listen to 3 different channels at the same time and the sensor can transmit to any one of those 3 channels at a single time). All tests I did were on channel 1, so I don't know which of those bits represent the channel number.
+The first 12 bits I think are just there so that the thermometer doesn't confuse random noise with a transmission from the sensor, so the thermometer will only listen to transmissions that get the first 12 bits right. I think some of those bits also tell the channel number (the thermometer can listen to 3 different channels at the same time and the sensor can only transmit to any one of those 3 channels at a single time). All tests I did were on channel 1, so I don't know which of those bits represent the channel number.
 
 The temperature is stored in the 16 bits from bit number 12 to bit number 27 (starting from bit 0), and it's stored multiplied by 10, for example, if the temperature that the sensor reads is 15.7 degrees celsius, then the binary number that will be sent in those 16 bits will be 0000000010011101, which is 157 in binary.
 
