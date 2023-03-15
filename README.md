@@ -1,4 +1,6 @@
-# binary-wave-file-decodifier
+Open the file "hacking thermometer.md" to see a cool real world example of how this code can be used
+
+# Description
 
 This project turns .wav files to binary. Files must be RIFF (not RF64) and not very long, an error may occur when using some functions (numpy overflow or something like that), that is because the file is too long, shorten it and try it again.
 
