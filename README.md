@@ -1,4 +1,4 @@
-Open the file "hacking thermometer.md" to see a cool real world example of how this code can be used
+Click [this link](https://github.com/XaviMV/binary-wave-file-decodifier/blob/main/hacking%20thermometer.md) or open the file "hacking_thermometer.md" to see a cool real world example of how this code can be used
 
 # Description
 
